@@ -1,0 +1,47 @@
+.mobileNavLinkTab {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .mobileNavLinkTab {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        z-index: 80;
+        width: 100dvw;
+        height: calc(100dvh - 64px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        background: var(--black);
+    }
+
+    .mobileNavLink {
+        font-size: var(--fregular);
+        font-weight: 600;
+        color: var(--pale);
+        border-bottom: 4px solid transparent;
+        padding: 5px 12px;
+        cursor: pointer;
+    }
+    .mobileNavLink.active {
+        font-weight: 600;
+        color: var(--white);
+        border-bottom: 4px solid var(--primary);
+    }
+    .mobileNavLink:hover {
+        opacity: .4
+    }
+
+    .authBtnTab {
+        width: 100%;
+        padding: 64px 16px;
+        display: flex;
+        gap: 16px;
+    }
+    .authBtnTab button {
+        width: calc((100% - 16px)/2);
+    }
+}

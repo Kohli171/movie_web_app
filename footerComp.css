@@ -1,0 +1,210 @@
+footer {
+    background: var(--black);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerInner {
+    width: 100%;
+    max-width: 1024px;
+    padding: 32px 0;
+}
+
+.footerTop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.footerTopLeft,
+.footerTopRight {
+    max-width: calc((100% - 32px)/2);
+}
+
+.footerLogoTab {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.footerLogoTab img {
+    width: 48px;
+    height: 48px;
+}
+
+.footerLogo {
+    font-size: var(--fbig);
+    font-weight: 600;
+    color: var(--white);
+}
+.footerLogo span {
+    color: var(--primary);
+}
+
+.footerDesc {
+    font-size: var(--fsmall);
+    font-weight: 400;
+    color: var(--pale);
+    margin: 8px 0 16px;
+}
+
+.footerTry {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footerSocial {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+.footerSocialIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    border: 1px solid var(--dpale2);
+    background: var(--dpale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.footerSocialIcon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+.footerSocialIcon:hover {
+    background: linear-gradient(to top right, var(--primary) 20%, var(--dpale) 40%, var(--dpale) 40%);
+}
+
+.footerTopRight {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+.footerTRTab {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footerTRTitle {
+    font-size: var(--fmedium);
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+.footerTRLink {
+    width: fit-content;
+    font-size: var(--fsmall);
+    font-weight: 400;
+    color: var(--pale);
+    cursor: pointer;
+}
+.footerTRLink:hover {
+    color: var(--primary);
+}
+
+.footerLine {
+    width: 100%;
+    height: 0.4px;
+    background: var(--dpale2);
+    margin: 32px 0;
+}
+
+.footerBottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.footerBottomLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+.footerBLCheck {
+    width: 18px;
+    height: 18px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--pale);
+}
+.footerBLCheck img {
+    width: 16px;
+    height: 16px
+}
+.footerBLText {
+    font-size: var(--fsmall);
+    font-weight: 400;
+    color: var(--pale);
+    letter-spacing: 1.2px;
+}
+
+.footerBottomRight {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.footerPlatformTab {
+    width: fit-content;
+    padding: 10px 16px;
+    border-radius: 32px;
+    border: 1px solid var(--dpale2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.footerPlatformIcon {
+    width: 16px;
+    height: 16px;
+}
+.footerPlatformIcon img {
+    object-fit: contain;
+}
+.footerPlatformName {
+    font-size: var(--fregular);
+    font-weight: 300;
+    color: var(--pale);
+}
+.footerPlatformTab:hover {
+    background: linear-gradient(var(--primary), transparent);
+}
+
+.footerCopyright {
+    width: 100%;
+    padding: 16px;
+    background: var(--primary);
+    font-size: var(--fsmall);
+    color: var(--pale);
+    text-align: center;
+}
+
+
+@media screen and (max-width: 640px) {
+    .footerInner {
+        padding: 32px 16px;
+    }
+
+    .footerTop {
+        flex-wrap: wrap;
+    }
+
+    .footerTopLeft,
+    .footerTopRight {
+        width: 100%;
+        max-width: 100%;
+    }
+}

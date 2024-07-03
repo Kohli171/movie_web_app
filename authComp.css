@@ -1,0 +1,191 @@
+.authModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100dvw;
+    min-height: 100dvh;
+    padding: 16px;
+    background: rgba(70, 70, 70, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authScreenBlock {
+    width: 95%;
+    max-width: 420px;
+    background: var(--black);
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.closeModalBtn {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--dpale2);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.closeModalBtn img {
+    width: 24px;
+    height: 24px;
+}
+
+.authForm {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.authLogo {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 8px;
+}
+
+.authTitle {
+    font-size: var(--fbig);
+    font-weight: 600;
+    color: var(--white);
+}
+.authSub {
+    font-size: var(--fsmall);
+    font-weight: 400;
+    color: var(--pale);
+}
+
+.authSocialBlock {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 16px 0;
+}
+.authSocialBtn {
+    width: calc((100% - 32px)/3);
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid var(--dpale2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.authSocialBtnImg {
+    width: 24px;
+    height: 24px;
+}
+.authSocialBtnImg img {
+    object-fit: contain;
+}
+.authSocialBtn:hover {
+    opacity: .4;
+}
+
+.authDemacator {
+    width: 100%;
+    height: 1.3px;
+    background: var(--dpale2);
+    font-size: var(--fsmall);
+    font-weight: 400;
+    color: var(--pale);
+    position: relative;
+    margin: 16px 0;
+}
+.authDemacator::before {
+    content: attr(data-name);
+    text-transform: uppercase;
+    padding: 0 8px;
+    background: var(--black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.authForgotBlock {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.authCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: var(--fsmall);
+    font-weight: 400;
+    color: var(--pale);
+    cursor: pointer;
+}
+.authCheckbox label {
+    cursor: pointer;
+}
+
+.authForgotText {
+    font-size: var(--fsmall);
+    font-weight: 400;
+    color: var(--pale);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.authForgotText:hover {
+    color: var(--primary);
+}
+
+.authBtn {
+    width: 100%;
+    margin: 32px 0 8px;
+}
+
+.authBtmText {
+    font-size: var(--fsmall);
+    font-weight: 400;
+    color: var(--pale);
+}
+.authBtmText span {
+    font-weight: 600;
+    color: var(--white);
+}
+
+.authInputTab {
+    width: 100%;
+    margin: 4px 0;
+}
+
+.authInputLabel {
+    font-size: var(--fsmall);
+    font-weight: 400;
+    color: var(--pale);
+}
+
+.authInputInput {
+    width: 100%;
+    height: 48px;
+    margin-top: 4px;
+    border: 1px solid var(--dpale2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.authInputInput input::placeholder {
+    color: var(--dpale2);
+}
+
+
+@media screen and (max-width: 640px) {
+    .authModal {
+        padding: 0;
+    }
+    .authScreenBlock {
+        padding: 24px 16px;
+    }
+}

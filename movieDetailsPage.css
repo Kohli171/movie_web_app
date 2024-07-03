@@ -1,0 +1,185 @@
+.movieDetailThumbnail {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 540px;
+    position: relative;
+}
+.movieDetailThumbnail>img {
+    object-fit: fill;
+}
+.movieDetialBackBtn {
+    width: 104px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background: var(--dpale);
+    border: 1px solid var(--dpale2);
+    border-radius: 24px;
+    font-size: var(--fsmall);
+    color: var(--pale);
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+    cursor: pointer;
+}
+.movieDetialBackBtn:hover {
+    opacity: .7;
+}
+.movieDetialBackBtn img {
+    width: 18px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.mdMovieDetails {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: fit-content;
+    padding: 32px 0 16px;
+}
+.mdMovieDetailsTop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.mdMovieDetailsLeft {
+    width: 100%;
+    max-width: 540px;
+}
+
+.mdMovieTitle {
+    font-size: var(--fbig);
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+}
+
+.mdInfoText {
+    font-size: var(--fsmall);
+    font-weight: 400;
+    color: var(--pale);
+}
+
+.mdInfoTab {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.mdInfoDemacator {
+    width: 1.5px;
+    height: 15px;
+    border-radius: 2px;
+    background: var(--pale);
+}
+
+.mdRating {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 7px;
+    border-radius: 16px;
+    border: 1.3px solid var(--dpale2);
+    background: var(--dpale);
+}
+
+.mdRatingImg {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    place-items: center;
+}
+
+.mdRateText {
+    height: 14px;
+    border: 1px solid transparent;
+    line-height: 14px;
+    font-size: var(--fsmall);
+    font-weight: 600;
+    color: var(--pale);
+}
+
+.mdDemacator {
+    width: 95%;
+    max-width: 1024px;
+    height: 1.5px;
+    margin: 8px auto;
+    border-radius: 2px;
+    background: var(--dpale2);
+}
+
+.mdMovieSection {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.mdMovieSectionHeading {
+    width: fit-content;
+    padding: 4px 8px;
+    background: var(--dpale2);
+    font-size: var(--fmedium);
+    font-weight: 600;
+    color: var(--pale);
+}
+.mdMovieSectionDesc {
+    padding-left: 16px;
+    font-size: var(--fsmall);
+    font-weight: 400;
+    color: var(--pale);
+}
+
+.mdBtnTab {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mdBuyBtn {
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    border: 2px solid var(--dpale2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.mdBuyBtn img {
+    width: 18px;
+    height: 18px;
+}
+.mdBuyBtn:hover {
+    opacity: .4;
+}
+
+
+@media screen and (max-width: 640px) {
+    .movieDetailThumbnail {
+        height: 360px;
+    }
+
+    .mdMovieDetails {
+        padding: 16px;
+    }
+
+    .mdMovieSection {
+        padding: 16px;
+    }
+}

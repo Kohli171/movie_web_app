@@ -1,0 +1,78 @@
+.searchBlockComp {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.searchBlockTitle {
+    font-size: var(--fbig);
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.searchBlockPlane {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 16px 0 32px;
+}
+
+.searchBlockTagList {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+}
+
+.searchBlockTag {
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 24px;
+    background: var(--dpale2);
+    font-size: var(--fsmall);
+    color: var(--pale);
+    cursor: pointer;
+}
+.searchBlockTag.active {
+    background: var(--pale);
+    color: var(--dpale2);
+}
+.searchBlockTag:hover {
+    opacity: .4;
+}
+
+.searchBlockInpBlock {
+    width: 100%;
+    max-width: 360px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid var(--dpale2);
+    background: var(--dpale);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 15px;
+}
+.searchBlockInpIcon {
+    width: 24px;
+    height: 24px;
+}
+.searchBlockActive {
+    background: var(--pale);
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: var(--fsmall);
+    color: var(--black);
+    text-transform: capitalize;
+}
+.searchBlockInpTab {
+    width: calc(100% - (16px + 24px + 60px));
+}
+.searchBlockInpTab input {
+    padding: 0;
+}

@@ -1,0 +1,29 @@
+.navLinkTab {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 0 16px;
+}
+
+.navLink {
+    font-size: var(--fregular);
+    font-weight: 400;
+    color: var(--pale);
+    border-bottom: 4px solid transparent;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+.navLink.active {
+    font-weight: 600;
+    color: var(--white);
+    border-bottom: 4px solid var(--primary);
+}
+.navLink:hover {
+    opacity: .4
+}
+
+@media screen and (max-width: 640px) {
+    .navLinkTab {
+        display: none;
+    }
+}

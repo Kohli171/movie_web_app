@@ -1,0 +1,171 @@
+.mlcBlock {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.movieListComp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 8px 16px;
+}
+
+.movieListTab {
+    width: 100%;
+    min-width: 230px;
+    max-width: 230px;
+    height: fit-content;
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--black);
+    cursor: pointer;
+}
+
+.movieListTab:hover .movieListThumbnail>img {
+    transform: scale(1.3);
+}
+
+.movieListThumbnail {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.movieListThumbnail>img {
+    object-fit: fill;
+}
+
+.movieListRating {
+    position: absolute;
+    top: 0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 7px;
+    margin: 16px;
+    border-radius: 16px;
+    border: 1.3px solid var(--dpale2);
+    background: var(--dpale);
+}
+
+.movieListRatingImg {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    place-items: center;
+}
+
+.movieListRateText {
+    height: 14px;
+    border: 1px solid transparent;
+    line-height: 14px;
+    font-size: var(--fsmall);
+    font-weight: 600;
+    color: var(--pale);
+}
+
+.movieListDesc {
+    width: 100%;
+    padding: 16px;
+    background: var(--black);
+}
+
+.movieListTitle {
+    font-size: var(--fmedium);
+    font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 1.2px;
+    line-height: 18px;
+    cursor: pointer;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.movieListTitle:hover {
+    opacity: .4;
+}
+
+.movieListMeta {
+    font-size: var(--fsmall);
+    font-weight: 300;
+    color: var(--pale);
+    margin: 8px 0 16px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.movieListInfoText {
+    font-size: var(--fsmall);
+    font-weight: 600;
+    color: var(--dpale2);
+}
+.movieListInfoTab {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+.movieListInfoDemacator {
+    width: 1.5px;
+    height: 15px;
+    border-radius: 2px;
+    background: var(--dpale2);
+}
+
+.movieListPagination {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.movieListPgnBtn {
+    font-size: var(--fsmall);
+    color: var(--white);
+    background: var(--dpale2);
+    width: 96px;
+    height: 38px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.movieListPgnBtn:hover {
+    background: var(--primary);
+}
+.movieListPgnValue {
+    font-size: var(--fsmall);
+    color: var(--white);
+}
+
+
+@media screen and (max-width: 480px) {
+    .movieListTab {
+        width: calc((100% - 16px)/2);
+        min-width: calc((100% - 16px)/2);
+        max-width: calc((100% - 16px)/2);
+    }
+    .movieListThumbnail {
+        height: 120px;
+    }
+    .movieListRating {
+        margin: 8px;
+    }
+    .movieListDesc {
+        padding: 16px 8px 8px;
+    }
+    .movieListTitle {
+        font-size: var(--fregular);
+    }
+}
